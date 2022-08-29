@@ -11,21 +11,11 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 def main(config):
 
     folder_path = {
-        'live': '/home/ssl/Database/databaserelease2/',
-        'csiq': '/home/ssl/Database/CSIQ/',
-        'tid2013': '/home/ssl/Database/TID2013/',
-        'livec': '/home/ssl/Database/ChallengeDB_release/ChallengeDB_release/',
-        'koniq-10k': '/home/ssl/Database/koniq-10k/',
-        'bid': '/home/ssl/Database/BID/',
+        'hsimagedataset': './hsimagedataset'
     }
 
     img_num = {
-        'live': list(range(0, 29)),
-        'csiq': list(range(0, 30)),
-        'tid2013': list(range(0, 25)),
-        'livec': list(range(0, 1162)),
-        'koniq-10k': list(range(0, 10073)),
-        'bid': list(range(0, 586)),
+        'hsimagedataset': list(range(2900))
     }
     sel_num = img_num[config.dataset]
 
